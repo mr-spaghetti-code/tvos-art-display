@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		354575FB2E24D7ED0020297A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 354575E22E24D7560020297A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 354575E92E24D7560020297A;
+			remoteInfo = "Digital Art Display";
+		};
+		354576052E24D7ED0020297A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 354575E22E24D7560020297A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 354575E92E24D7560020297A;
+			remoteInfo = "Digital Art Display";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		354575EA2E24D7560020297A /* Digital Art Display.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Art Display.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		354575FA2E24D7ED0020297A /* Digital Art DisplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Digital Art DisplayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		354576042E24D7ED0020297A /* Digital Art DisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Digital Art DisplayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		354575EC2E24D7560020297A /* Digital Art Display */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Digital Art Display";
+			sourceTree = "<group>";
+		};
+		354575FD2E24D7ED0020297A /* Digital Art DisplayTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Digital Art DisplayTests";
+			sourceTree = "<group>";
+		};
+		354576072E24D7ED0020297A /* Digital Art DisplayUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Digital Art DisplayUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		354575E72E24D7560020297A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		354575F72E24D7ED0020297A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		354576012E24D7ED0020297A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		354575E12E24D7560020297A = {
+			isa = PBXGroup;
+			children = (
+				354575EC2E24D7560020297A /* Digital Art Display */,
+				354575FD2E24D7ED0020297A /* Digital Art DisplayTests */,
+				354576072E24D7ED0020297A /* Digital Art DisplayUITests */,
+				354575EB2E24D7560020297A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		354575EB2E24D7560020297A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				354575EA2E24D7560020297A /* Digital Art Display.app */,
+				354575FA2E24D7ED0020297A /* Digital Art DisplayTests.xctest */,
+				354576042E24D7ED0020297A /* Digital Art DisplayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		354575E92E24D7560020297A /* Digital Art Display */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3545760E2E24D7ED0020297A /* Build configuration list for PBXNativeTarget "Digital Art Display" */;
+			buildPhases = (
+				354575E62E24D7560020297A /* Sources */,
+				354575E72E24D7560020297A /* Frameworks */,
+				354575E82E24D7560020297A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				354575EC2E24D7560020297A /* Digital Art Display */,
+			);
+			name = "Digital Art Display";
+			packageProductDependencies = (
+			);
+			productName = "Digital Art Display";
+			productReference = 354575EA2E24D7560020297A /* Digital Art Display.app */;
+			productType = "com.apple.product-type.application";
+		};
+		354575F92E24D7ED0020297A /* Digital Art DisplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 354576112E24D7ED0020297A /* Build configuration list for PBXNativeTarget "Digital Art DisplayTests" */;
+			buildPhases = (
+				354575F62E24D7ED0020297A /* Sources */,
+				354575F72E24D7ED0020297A /* Frameworks */,
+				354575F82E24D7ED0020297A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				354575FC2E24D7ED0020297A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				354575FD2E24D7ED0020297A /* Digital Art DisplayTests */,
+			);
+			name = "Digital Art DisplayTests";
+			packageProductDependencies = (
+			);
+			productName = "Digital Art DisplayTests";
+			productReference = 354575FA2E24D7ED0020297A /* Digital Art DisplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		354576032E24D7ED0020297A /* Digital Art DisplayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 354576142E24D7ED0020297A /* Build configuration list for PBXNativeTarget "Digital Art DisplayUITests" */;
+			buildPhases = (
+				354576002E24D7ED0020297A /* Sources */,
+				354576012E24D7ED0020297A /* Frameworks */,
+				354576022E24D7ED0020297A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				354576062E24D7ED0020297A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				354576072E24D7ED0020297A /* Digital Art DisplayUITests */,
+			);
+			name = "Digital Art DisplayUITests";
+			packageProductDependencies = (
+			);
+			productName = "Digital Art DisplayUITests";
+			productReference = 354576042E24D7ED0020297A /* Digital Art DisplayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		354575E22E24D7560020297A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					354575E92E24D7560020297A = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					354575F92E24D7ED0020297A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 354575E92E24D7560020297A;
+					};
+					354576032E24D7ED0020297A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 354575E92E24D7560020297A;
+					};
+				};
+			};
+			buildConfigurationList = 354575E52E24D7560020297A /* Build configuration list for PBXProject "Digital Art Display" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 354575E12E24D7560020297A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 354575EB2E24D7560020297A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				354575E92E24D7560020297A /* Digital Art Display */,
+				354575F92E24D7ED0020297A /* Digital Art DisplayTests */,
+				354576032E24D7ED0020297A /* Digital Art DisplayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		354575E82E24D7560020297A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		354575F82E24D7ED0020297A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		354576022E24D7ED0020297A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		354575E62E24D7560020297A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		354575F62E24D7ED0020297A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		354576002E24D7ED0020297A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		354575FC2E24D7ED0020297A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 354575E92E24D7560020297A /* Digital Art Display */;
+			targetProxy = 354575FB2E24D7ED0020297A /* PBXContainerItemProxy */;
+		};
+		354576062E24D7ED0020297A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 354575E92E24D7560020297A /* Digital Art Display */;
+			targetProxy = 354576052E24D7ED0020297A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3545760C2E24D7ED0020297A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 18.2;
+			};
+			name = Debug;
+		};
+		3545760D2E24D7ED0020297A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TVOS_DEPLOYMENT_TARGET = 18.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3545760F2E24D7ED0020297A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Digital Art Display/Preview Content\"";
+				DEVELOPMENT_TEAM = ZNF8XM6L4D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pimalai-labs.Digital-Art-Display";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		354576102E24D7ED0020297A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Digital Art Display/Preview Content\"";
+				DEVELOPMENT_TEAM = ZNF8XM6L4D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pimalai-labs.Digital-Art-Display";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		354576122E24D7ED0020297A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZNF8XM6L4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pimalai-labs.Digital-Art-DisplayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digital Art Display.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Digital Art Display";
+				TVOS_DEPLOYMENT_TARGET = 18.2;
+			};
+			name = Debug;
+		};
+		354576132E24D7ED0020297A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZNF8XM6L4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pimalai-labs.Digital-Art-DisplayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digital Art Display.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Digital Art Display";
+				TVOS_DEPLOYMENT_TARGET = 18.2;
+			};
+			name = Release;
+		};
+		354576152E24D7ED0020297A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZNF8XM6L4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pimalai-labs.Digital-Art-DisplayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "Digital Art Display";
+			};
+			name = Debug;
+		};
+		354576162E24D7ED0020297A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZNF8XM6L4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pimalai-labs.Digital-Art-DisplayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "Digital Art Display";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		354575E52E24D7560020297A /* Build configuration list for PBXProject "Digital Art Display" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3545760C2E24D7ED0020297A /* Debug */,
+				3545760D2E24D7ED0020297A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3545760E2E24D7ED0020297A /* Build configuration list for PBXNativeTarget "Digital Art Display" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3545760F2E24D7ED0020297A /* Debug */,
+				354576102E24D7ED0020297A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		354576112E24D7ED0020297A /* Build configuration list for PBXNativeTarget "Digital Art DisplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				354576122E24D7ED0020297A /* Debug */,
+				354576132E24D7ED0020297A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		354576142E24D7ED0020297A /* Build configuration list for PBXNativeTarget "Digital Art DisplayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				354576152E24D7ED0020297A /* Debug */,
+				354576162E24D7ED0020297A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 354575E22E24D7560020297A /* Project object */;
+}
