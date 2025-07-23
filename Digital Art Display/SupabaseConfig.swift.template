@@ -1,0 +1,13 @@
+//
+//  SupabaseConfig.swift
+//  Digital Art Display
+//
+//  Created by Joao Fiadeiro on 7/14/25.
+//
+import Foundation
+
+struct SupabaseConfig {
+    static let url = URL(string: "YOUR_SUPABASE_URL_HERE")!
+    static let anonKey = "YOUR_SUPABASE_ANON_KEY_HERE"
+    static let galleryAppDomain = "YOUR_DOMAIN_HERE"
+}

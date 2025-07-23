@@ -1,0 +1,1236 @@
+[
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x00000007cC35dcab4a396249AEFa295A8b6E16Ba",
+		"tokenId": "203",
+		"metadata": {
+			"aspect_ratio": 0.7143,
+			"traits": [
+				{
+					"value": "All Deco Echos",
+					"trait_type": "Deco Echo"
+				}
+			],
+			"tokenID": "203",
+			"generator_url": "https://generator.artblocks.io/0x00000007cc35dcab4a396249aefa295a8b6e16ba/203",
+			"artist": "Harvey Rayner",
+			"description": "**Algorithmic Sketch**  \n*Deco Echo* is an algorithmic sketch that explores quasi-symmetry. Unlike many of my previous long-form generative projects that combine multiple primitives to form a unified whole, *Deco Echo* uses a single generative building block, creating a surprisingly large diversity of distinct outputs. An algorithmic sketch is not inherently less valuable or artistically significant than more intricate works developed over many months. In fact, many beloved pieces from the generative art canon are based on very simple algorithms. Artistic value is not solely defined by complexity or work done but by clarity of instinct, thought, and inspiration. That said, hard work often paves the way for spontaneous moments of clarity.\n\n**Quasi-Symmetry**  \n*Deco Echo* marks my first exploration of what I call quasi-symmetry, where two mirrored outputs are generated simultaneously with slight variations. These quasi-symmetric structures are layered with more chaotic elements, which may differ entirely from their neighboring components. Symmetry, with its order and balance, typically brings a calming expression to compositions, but pure symmetry can lack tension. Quasi-symmetry is an attempt to gain the best of both worlds. This duality mirrors what we often see in nature—like the blend of symmetry and asymmetry in a face or tree.  \n\nTo complement the quasi-symmetry and chaotic elements, perfectly symmetric components are also incorporated, including the background, window surrounds, and gradient transforms, completing the triad of symmetric exploration.\n\n**Compositional Components**  \nThe outputs are composed of three elements:  \n1. **Perfectly Symmetric Elements:** Window cells, background, and gradient transforms.  \n2. **Quasi-Symmetric Elements:** Black and white structures.  \n3. **Chaotic Asymmetric Elements:** Base color and black details.\n",
+			"preview_asset_url": "https://media-proxy.artblocks.io/0x00000007cc35dcab4a396249aefa295a8b6e16ba/203.png",
+			"collection_uuid": "fcaa4198-1e77-4b89-99c8-c6001253fe40",
+			"platform": "Art Blocks Studio | 7",
+			"features": {},
+			"external_url": "",
+			"payout_address": "0x036f3d03c1ccdde1878f01607922ea12110ee9bd",
+			"token_hash": "0x16502e6c3bec9779e155982e04720aeb1f564a1d777d0e6e46a9f7c00e9697a0",
+			"project_id": "0",
+			"is_static": true,
+			"collection_owner": "0x76a5e5202b097cf115494a20653b2fa17740f436",
+			"primary_asset_url": "https://media-proxy.artblocks.io/0x00000007cc35dcab4a396249aefa295a8b6e16ba/203.png",
+			"image": "https://media-proxy.artblocks.io/0x00000007cc35dcab4a396249aefa295a8b6e16ba/203.png",
+			"website": "https://x.com/harvey_rayner",
+			"royaltyInfo": {
+				"additionalPayeePercentage": "0",
+				"artistAddress": "0x76a5e5202b097cf115494a20653b2fa17740f436",
+				"additionalPayee": "0x0000000000000000000000000000000000000000",
+				"royaltyFeeByID": 5
+			},
+			"license": "CC BY-NC-ND 4.0",
+			"engine_type": "studio",
+			"series": "N/A",
+			"name": "Deco Echo #203",
+			"minted": true,
+			"script_type": "js@na",
+			"collection_name": "Deco Echo by Harvey Rayner",
+			"collection": {},
+			"attributes": [],
+			"animation_url": null
+		},
+		"locator": "ethereum:0x00000007cC35dcab4a396249AEFa295A8b6E16Ba:203",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "11",
+		"metadata": {
+			"image": "https://arweave.net/LuwecwVeWCQAAKa4hzNaEPh3l7BO0dkoUJCtFQ3It6c",
+			"image_details": {
+				"format": "JPEG",
+				"width": 4000,
+				"sha256": "94e8366d69e6f409c68d400632f58743c685ac69257fe2db394b47de578ccf90",
+				"bytes": 20107217,
+				"height": 6000
+			},
+			"image_url": "https://arweave.net/LuwecwVeWCQAAKa4hzNaEPh3l7BO0dkoUJCtFQ3It6c",
+			"name": "Mind, Body & Soul",
+			"description": "The mind-body-soul balance is important for a meaningful life... but in order to reach enlightenment these 3 must be let go of, sacrificed, and burned.",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Vanitas",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "4",
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:11",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "12",
+		"metadata": {
+			"image": "https://arweave.net/TZWfyGD77Z3tPWtvoDotP-zxpUO-fZ7OPzR2AyPkBNs",
+			"image_details": {
+				"format": "JPEG",
+				"width": 6000,
+				"sha256": "adddca8e46cc3adbcbe5a49524baabae2da5aa57eb206a967778bcff7f54e21b",
+				"bytes": 16278181,
+				"height": 4000
+			},
+			"image_url": "https://arweave.net/TZWfyGD77Z3tPWtvoDotP-zxpUO-fZ7OPzR2AyPkBNs",
+			"name": "I buried my soul a thousand times ",
+			"description": "Time and time again... \n\nWhat does it take to be at peace?",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Vanitas",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "5",
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:12",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "14",
+		"metadata": {
+			"image": "https://arweave.net/mMLLZkERmhdMMvjjCtojVjdj0RklXG5wWCa5owjqtxg",
+			"image_details": {
+				"format": "JPEG",
+				"width": 3000,
+				"sha256": "5dbac65812ab2a5b4dbeed0195afd13d08da2dc0989872fe120170c3333041aa",
+				"bytes": 4962454,
+				"height": 2000
+			},
+			"image_url": "https://arweave.net/mMLLZkERmhdMMvjjCtojVjdj0RklXG5wWCa5owjqtxg",
+			"name": "You crushed my soul",
+			"description": "You crushed my soul, leaving me with nothing but shattered pieces to pick up and try to put back together.",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Vanitas",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "7",
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:14",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "17",
+		"metadata": {
+			"image": "https://arweave.net/Mlx351EOe4W6i9P9b15gb1e8ieWhChrLyUtdX2AQYbM",
+			"image_details": {
+				"format": "JPEG",
+				"width": 4000,
+				"sha256": "1441d585e9578f6e0da693bdcdb9efec32aa4d7a5ccebe130f9cbba6fb30fb09",
+				"bytes": 25862350,
+				"height": 6000
+			},
+			"image_url": "https://arweave.net/Mlx351EOe4W6i9P9b15gb1e8ieWhChrLyUtdX2AQYbM",
+			"name": "Requiem for Surrealism",
+			"description": "A visual ode to the original Surrealists, the ones who conceived the vision and captured irrational images from the subconscious and dream states. Today the term \"Surrealism\" is often used loosely, slapped onto any artwork with even the slightest hint of abstraction. This has led to a dilution of the true essence of Surrealism, and few artists today stay true to the movement's ethos and dream-like imagery. This piece is a statement on this issue and my interpretation of it.\n\n\n\n",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Signature Series",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "9",
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:17",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "19",
+		"metadata": {
+			"image": "https://arweave.net/25VZKaILS_HGafAnPF5AVm8GHEjJytHDV4jXZFwV8jA",
+			"image_details": {
+				"format": "JPEG",
+				"width": 3000,
+				"sha256": "a5a58f106960c38dec812cfa2fe1792b97eb0fc28d8bb4868e3dbe73e76dd7b1",
+				"bytes": 7197511,
+				"height": 2000
+			},
+			"image_url": "https://arweave.net/25VZKaILS_HGafAnPF5AVm8GHEjJytHDV4jXZFwV8jA",
+			"name": "Adam and Eve",
+			"description": "Their eyes widened as they stood before the strange object, its metallic exterior glistening under the sun's rays reflected the jungle around them. Adam approached with caution, his hand trembling as he touched the smooth surface. Little did he know, this encounter would forever alter the history of mankind.",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Alien Intelligence",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "1",
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:19",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "20",
+		"metadata": {
+			"image": "https://arweave.net/BiA7Vy0gh8xcNjCiWHE_qlYykzCTQGyteXj1B7FIGak",
+			"image_details": {
+				"format": "JPEG",
+				"width": 4000,
+				"sha256": "23277211bf1d9a9afe3c226b8bed8a54d1f790c0dea1fc2d4d46bee813b5901c",
+				"bytes": 16666488,
+				"height": 6000
+			},
+			"image_url": "https://arweave.net/BiA7Vy0gh8xcNjCiWHE_qlYykzCTQGyteXj1B7FIGak",
+			"name": "Transcendence",
+			"description": "Adam's gaze fixed upon the celestial messengers. An unseen force seized him, forging a bridge between two worlds. In that enigmatic union, the cosmic dance of knowledge and secrets commenced, forever binding humans to the extraterrestrial intelligence that whispered through the mycelial network of existence.",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Alien Intelligence",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "2",
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:20",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "21",
+		"metadata": {
+			"image": "https://arweave.net/w6TNx8Yndyv7QWgisnbBt-2-j1jpb-QFUermKUEAEWQ",
+			"image_details": {
+				"format": "JPEG",
+				"width": 3000,
+				"sha256": "0ee1cd9824e4188b3ebef8961fd5d8eac74be508e3c7d96fa4a719c7e9e4a84f",
+				"bytes": 12350257,
+				"height": 4500
+			},
+			"image_url": "https://arweave.net/w6TNx8Yndyv7QWgisnbBt-2-j1jpb-QFUermKUEAEWQ",
+			"name": "Awaken",
+			"description": "As the sacred fungi courses through Adam’s body, the veil of perception lifts, and the world transforms into a kaleidoscope of vibrant hues and mystical symphonies. Synesthesia unlocks new dimensions of experience, as colors become sound and scents take on visible forms. Within his expanding consciousness, neurogenesis fires up an extraordinary evolution, kindling the spark that will ignite the torch of language and intelligence for generations yet to come. The enigmatic connection between the extraterrestrial intelligence and the burgeoning Homo sapiens enters a new phase, forever altering the course of human destiny.",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Alien Intelligence",
+					"trait_type": "Collection"
+				},
+				{
+					"display_type": "number",
+					"value": 3,
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:21",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "22",
+		"metadata": {
+			"image": "https://arweave.net/t06NkMPYguqvWuwezf9ChHUb3RSXlfjq3awuoVEMrCI",
+			"image_details": {
+				"format": "JPEG",
+				"width": 3000,
+				"sha256": "97a906b0b2779b1bf3d0f64f9a999103249220ca236696c33c2ea580e99739c8",
+				"bytes": 10084715,
+				"height": 4500
+			},
+			"image_url": "https://arweave.net/t06NkMPYguqvWuwezf9ChHUb3RSXlfjq3awuoVEMrCI",
+			"name": "Imprinted Journey",
+			"description": "Adam stands at the cave entrance, witnessing the motherships departing Earth's domain. The walls adorned with intricate paintings reveal the story of the mushrooms, a testament to the profound connection between humans and the extraterrestrial wisdom they bestowed. Their mission is complete now… Language and spirituality emerge, art becomes a sacred expression, and rituals bind communities. A symphony of thought, belief, and creativity resonates, as the very essence of what it means to be human flourishes.",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Alien Intelligence",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "4",
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:22",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "23",
+		"metadata": {
+			"image": "https://arweave.net/5yajnYTKgHiMTAgfyw6alC1J-pYNllnuInFZAk8bW6E",
+			"image_details": {
+				"format": "JPEG",
+				"width": 4000,
+				"sha256": "4840c794f555a38f04f77e75180ec75efc92e172474b5062e0eea5cee8c4a893",
+				"bytes": 8062435,
+				"height": 6000
+			},
+			"image_url": "https://arweave.net/5yajnYTKgHiMTAgfyw6alC1J-pYNllnuInFZAk8bW6E",
+			"name": "Legacy",
+			"description": "Adam’s skull is absorbed back into the earth. From within it, a cluster of mushrooms grows, embodying the eternal rhythm of life and death. It is here, at this sacred juncture, that the legacy of the alien intelligence transcends the boundaries of time. The remnants of Adam's existence become a vessel for the cosmic essence, mingling with the fertile soil and permeating the very essence of future generations. ",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Alien Intelligence",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "5",
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:23",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "24",
+		"metadata": {
+			"image": "https://arweave.net/-iRs2sDoeQv3E7A1BJzq7wzPQRgZbbtQRJlRfSbUjpI",
+			"image_details": {
+				"format": "JPEG",
+				"width": 4000,
+				"sha256": "08d9e460210e0966b5748c7e10d793b13aaec439272bd6ff268434da1e80cb55",
+				"bytes": 18353518,
+				"height": 6000
+			},
+			"image_url": "https://arweave.net/-iRs2sDoeQv3E7A1BJzq7wzPQRgZbbtQRJlRfSbUjpI",
+			"name": "Celestial Cleansing",
+			"description": "Submerged beneath the waves, the pyramid still stands,  \nA silent sentinel, crafted by ancient hands.  \nAn earthly vessel, a conduit for the divine,  \nWhere extraterrestrial forces intertwine.\n\nMixed digital media, Chema Mendez, 2023.",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Visions",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "1",
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:24",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "3",
+		"metadata": {
+			"name": "Royal Cap",
+			"description": "Part III of the Signature Series.\n\nDigital Art by Chema Mendez.",
+			"image": "https://i.seadn.io/s/raw/files/f5086d16e302a77f3184d7239e14b7bb.jpg?w=500&auto=format",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Signature Series",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "3",
+					"trait_type": "Number"
+				}
+			],
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:3",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "38",
+		"metadata": {
+			"image": "https://arweave.net/_EfjLJtXcgwIvMscB_jtAaYHedEPhlNNn0a9BaggjBw",
+			"image_details": {
+				"format": "JPEG",
+				"width": 3000,
+				"sha256": "fdf198f06686139373b56958652d55c0e1ebc316b1d978242e7b6f4c6814e0d8",
+				"bytes": 10218151,
+				"height": 4500
+			},
+			"image_url": "https://arweave.net/_EfjLJtXcgwIvMscB_jtAaYHedEPhlNNn0a9BaggjBw",
+			"name": "Genesis",
+			"description": "Duality unfolds before our eyes, as the forces of good and evil dance in harmonious opposition. Here, the very essence of life is unveiled, as alien emissaries bestow the sacred gift of DNA upon the fertile soil of planet Earth. The mycelial network, intertwining with celestial energies, weaves the intricate threads of life's genesis.",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Visions",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "4",
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:38",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "39",
+		"metadata": {
+			"image": "https://arweave.net/21T_9OHP1klU1c8os_ILL03lW4G0i7aBeHO7DcxCGUY",
+			"image_details": {
+				"format": "JPEG",
+				"width": 4000,
+				"sha256": "4f3f39d5db5cc878643d7761ca1d1eddea19db4a848c5b9b8069ad490c895e2f",
+				"bytes": 7258229,
+				"height": 6000
+			},
+			"image_url": "https://arweave.net/21T_9OHP1klU1c8os_ILL03lW4G0i7aBeHO7DcxCGUY",
+			"name": "Still can't fill the hole you left behind",
+			"description": "A void that lingers...\n\nAirdrop piece to all my 1/1 holders.\n\nDigital mixed media, 2023, Chema Mendez.",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Signature Series",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "11",
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:39",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "40",
+		"metadata": {
+			"image": "https://arweave.net/4OILqD5MH4whr_vOP1cg6fJ-Tkh_FlVczkYiwR1gNWU",
+			"image_details": {
+				"format": "JPEG",
+				"width": 4000,
+				"sha256": "c75a9184dc0bd400bab29a58a7f7ba7f363991237d8553adf4762e62a12c4fee",
+				"bytes": 18662037,
+				"height": 6000
+			},
+			"image_url": "https://arweave.net/4OILqD5MH4whr_vOP1cg6fJ-Tkh_FlVczkYiwR1gNWU",
+			"name": "Chaos and Ecstasy",
+			"description": "Part I of the Flesh and Bone series.\n\n\"Finding ecstasy in chaos, guided by a beacon of creative drive amidst the madness\"\n\nMixed digital media, Chema Mendez, 2023",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Flesh and Bone",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "1",
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:40",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "41",
+		"metadata": {
+			"image": "https://arweave.net/4S3OD8TuNGK4scMCB-g_kuLvUUw4suuFc9UyOPDfaFA",
+			"image_details": {
+				"format": "JPEG",
+				"width": 4000,
+				"sha256": "ad5523d97dc70a32b79c3caa0dd17c60857cd3ef1e83718719e6581499650f07",
+				"bytes": 20053417,
+				"height": 6000
+			},
+			"image_url": "https://arweave.net/4S3OD8TuNGK4scMCB-g_kuLvUUw4suuFc9UyOPDfaFA",
+			"name": "Dance of the Spirit",
+			"description": "Part II of the Flesh and Bone series.\n\n\"Dancing between life and death, existing through echoes in time\"\n\nMixed digital media, Chema Mendez, 2023.",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Flesh and Bone",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "2",
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:41",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "42",
+		"metadata": {
+			"image": "https://arweave.net/tXfSNmWSz2l4XQm8vz7vgBGQMt4tHLJ9I99WerInSbw",
+			"image_details": {
+				"format": "JPEG",
+				"width": 4000,
+				"sha256": "fdfbf418c37a162766f47e6aa0f103bb83475879a758f87ef0e33f77279307fb",
+				"bytes": 11087451,
+				"height": 6000
+			},
+			"image_url": "https://arweave.net/tXfSNmWSz2l4XQm8vz7vgBGQMt4tHLJ9I99WerInSbw",
+			"name": "The Oracle",
+			"description": "Part III of the Flesh and Bone series.\n\n\"Within four pillars, channeling the Gods, she's blindfolded but all-seeing \"\n\nMixed digital media, Chema Mendez, 2023.",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Flesh and Bone",
+					"trait_type": "Collection"
+				},
+				{
+					"value": "3",
+					"trait_type": "Number"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:42",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "43",
+		"metadata": {
+			"image": "https://arweave.net/g3ipceN592xkysOP1L5KS1WtK6ndqoLdccnSqDxu7SA",
+			"image_details": {
+				"format": "JPEG",
+				"width": 4000,
+				"sha256": "684dbd6c1d5537d605cb54c621fbc35bb1d521b5b0adede77c49f88957a80016",
+				"bytes": 12902726,
+				"height": 5000
+			},
+			"image_url": "https://arweave.net/g3ipceN592xkysOP1L5KS1WtK6ndqoLdccnSqDxu7SA",
+			"name": "Heaven and Earth",
+			"description": "mendezmendez, digital mixed media, 2024",
+			"attributes": [
+				{
+					"display_type": "text",
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "The Present",
+					"trait_type": "Collection"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:43",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd",
+		"tokenId": "44",
+		"metadata": {
+			"name": "Astral Traveling",
+			"description": "mendezmendez, digital mixed media, 2024",
+			"image": "https://i2c.seadn.io/ethereum/0x009c5b7ff119972e3437b51c4f94addb8dbb2bcd/e4e5dc7fea5863097575f65cbe4148/a4e4e5dc7fea5863097575f65cbe4148.jpeg",
+			"attributes": [
+				{
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "The Present",
+					"trait_type": "Collection"
+				}
+			],
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x009c5b7fF119972e3437b51C4F94ADDB8DBB2bCd:44",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x33FD426905F149f8376e227d0C9D3340AaD17aF1",
+		"tokenId": "268",
+		"metadata": {
+			"image": "https://arweave.net/lxxZRdG6Mu6oCYS41Obp8j4RH_QP3K-AaVrcHVlU5ks",
+			"external_url": "https://seize.io/the-memes/268",
+			"image_details": {
+				"format": "GIF",
+				"width": 4000,
+				"sha256": "a2cd64303d7157c2df3be264ba4228fb646d1a5001d71bfca7627eea3e650a9a",
+				"bytes": 32857908,
+				"height": 3000
+			},
+			"image_url": "https://arweave.net/lxxZRdG6Mu6oCYS41Obp8j4RH_QP3K-AaVrcHVlU5ks",
+			"name": "FARMERS MARKET",
+			"description": "As the Farmers Market drew to a close, I couldn't help but notice the corpses. We survived.\n\nMeme: 9  \nSeason: 8  \nCard: 9",
+			"attributes": [
+				{
+					"display_type": "text",
+					"value": "C4RDINAL",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "c4rdinal",
+					"max_value": "",
+					"trait_type": "SEIZE Artist Profile"
+				},
+				{
+					"value": "Survive",
+					"max_value": "",
+					"trait_type": "Meme Name"
+				},
+				{
+					"value": "No",
+					"max_value": "",
+					"trait_type": "Punk 6529"
+				},
+				{
+					"value": "No",
+					"max_value": "",
+					"trait_type": "Gradient"
+				},
+				{
+					"value": "Color",
+					"max_value": "",
+					"trait_type": "Palette"
+				},
+				{
+					"value": "Yes",
+					"max_value": "",
+					"trait_type": "Movement"
+				},
+				{
+					"value": "No",
+					"max_value": "",
+					"trait_type": "Dynamic"
+				},
+				{
+					"value": "No",
+					"max_value": "",
+					"trait_type": "Interactive"
+				},
+				{
+					"value": "Yes",
+					"max_value": "",
+					"trait_type": "Collab"
+				},
+				{
+					"value": "No",
+					"max_value": "",
+					"trait_type": "OM"
+				},
+				{
+					"value": "Yes",
+					"max_value": "",
+					"trait_type": "3D"
+				},
+				{
+					"value": "Card",
+					"max_value": "",
+					"trait_type": "Type"
+				},
+				{
+					"value": "Glitch",
+					"max_value": "",
+					"trait_type": "Style"
+				},
+				{
+					"value": "I got two of em",
+					"max_value": "",
+					"trait_type": "Jewel"
+				},
+				{
+					"value": "Dancing pixels",
+					"max_value": "",
+					"trait_type": "Superpower"
+				},
+				{
+					"value": "1% better",
+					"max_value": "",
+					"trait_type": "Dharma"
+				},
+				{
+					"value": "Golf clubs",
+					"max_value": "",
+					"trait_type": "Gear"
+				},
+				{
+					"value": "Sweat",
+					"max_value": "",
+					"trait_type": "Clothing"
+				},
+				{
+					"value": "Fire",
+					"max_value": "",
+					"trait_type": "Element"
+				},
+				{
+					"value": "Strawberry Sour",
+					"max_value": "",
+					"trait_type": "Mystery"
+				},
+				{
+					"value": "Minerals",
+					"max_value": "",
+					"trait_type": "Secrets"
+				},
+				{
+					"value": "Baseball bat",
+					"max_value": "",
+					"trait_type": "Weapon"
+				},
+				{
+					"value": "Chaos",
+					"max_value": "",
+					"trait_type": "Home"
+				},
+				{
+					"value": "Commit",
+					"max_value": "",
+					"trait_type": "Parent"
+				},
+				{
+					"value": "Branch",
+					"max_value": "",
+					"trait_type": "Sibling"
+				},
+				{
+					"value": "Steak & Eggs",
+					"max_value": "",
+					"trait_type": "Food"
+				},
+				{
+					"value": "Iced coffee",
+					"max_value": "",
+					"trait_type": "Drink"
+				},
+				{
+					"value": "2024/08",
+					"max_value": "",
+					"trait_type": "Issuance Month"
+				},
+				{
+					"value": "Yes",
+					"max_value": "",
+					"trait_type": "Pepe"
+				},
+				{
+					"value": "No",
+					"max_value": "",
+					"trait_type": "GM"
+				},
+				{
+					"value": "Bananas",
+					"max_value": "",
+					"trait_type": "Bonus"
+				},
+				{
+					"value": "2x Points",
+					"max_value": "",
+					"trait_type": "Boost"
+				},
+				{
+					"display_type": "number",
+					"value": 9,
+					"max_value": "",
+					"trait_type": "Type - Meme"
+				},
+				{
+					"display_type": "number",
+					"value": 8,
+					"max_value": "",
+					"trait_type": "Type - Season"
+				},
+				{
+					"display_type": "number",
+					"value": 268,
+					"max_value": "",
+					"trait_type": "Type - Card"
+				},
+				{
+					"display_type": "boost_percentage",
+					"value": 420,
+					"max_value": 100,
+					"trait_type": "Points - Power"
+				},
+				{
+					"display_type": "boost_percentage",
+					"value": 420,
+					"max_value": 100,
+					"trait_type": "Points - Wisdom"
+				},
+				{
+					"display_type": "boost_percentage",
+					"value": 420,
+					"max_value": 100,
+					"trait_type": "Points - Loki"
+				},
+				{
+					"display_type": "boost_percentage",
+					"value": 420,
+					"max_value": 100,
+					"trait_type": "Points - Speed"
+				},
+				{
+					"value": "No",
+					"max_value": "",
+					"trait_type": "Summer"
+				},
+				{
+					"value": "No",
+					"max_value": "",
+					"trait_type": "Tulip"
+				}
+			],
+			"created_by": "6529 Collections",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x33FD426905F149f8376e227d0C9D3340AaD17aF1:268",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x33FD426905F149f8376e227d0C9D3340AaD17aF1",
+		"tokenId": "52",
+		"metadata": {
+			"image": "https://arweave.net/80j_EJJG_w432PJGDoHpT9ktH1MtZzzwqU995_ciG8c",
+			"external_url": "https://seize.io/the-memes/52",
+			"image_details": {
+				"format": "JPEG",
+				"width": 4250,
+				"sha256": "72e05de982018bf161b11014b0003fba391f1f615c86685f21d0265e53e4e2aa",
+				"bytes": 5484347,
+				"height": 5667
+			},
+			"image_url": "https://arweave.net/80j_EJJG_w432PJGDoHpT9ktH1MtZzzwqU995_ciG8c",
+			"name": "MEME FACTORY",
+			"description": "ONLY WITH YOUR HELP CAN WE SEIZE THE MEMES OF PRODUCTION AND DEFEAT THE ENEMY. OPEN METAVERSE FOR ALL!\n\nMeme: 1  \nSeason: 2  \nCard: 2",
+			"attributes": [
+				{
+					"value": "Grant Riven Yun",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Seize the Memes of Production",
+					"trait_type": "Meme Name"
+				},
+				{
+					"value": "No",
+					"trait_type": "Punk 6529"
+				},
+				{
+					"value": "No",
+					"trait_type": "Gradient"
+				},
+				{
+					"value": "Color",
+					"trait_type": "Palette"
+				},
+				{
+					"value": "No",
+					"trait_type": "Movement"
+				},
+				{
+					"value": "No",
+					"trait_type": "Dynamic"
+				},
+				{
+					"value": "No",
+					"trait_type": "Interactive"
+				},
+				{
+					"value": "Yes",
+					"trait_type": "Collab"
+				},
+				{
+					"value": "No",
+					"trait_type": "OM"
+				},
+				{
+					"value": "No",
+					"trait_type": "3D"
+				},
+				{
+					"value": "Card",
+					"trait_type": "Type"
+				},
+				{
+					"value": "Neo-Precisionism",
+					"trait_type": "Style"
+				},
+				{
+					"value": "Frogs",
+					"trait_type": "Jewel"
+				},
+				{
+					"value": "Frog whisperer",
+					"trait_type": "Superpower"
+				},
+				{
+					"value": "Frogs",
+					"trait_type": "Dharma"
+				},
+				{
+					"value": "mass produced Frogs",
+					"trait_type": "Gear"
+				},
+				{
+					"value": "Dad shoes",
+					"trait_type": "Clothing"
+				},
+				{
+					"value": "WATER... with green amphibians",
+					"trait_type": "Element"
+				},
+				{
+					"value": "Riven",
+					"trait_type": "Mystery"
+				},
+				{
+					"value": "SEIZE THEM MEMES",
+					"trait_type": "Secrets"
+				},
+				{
+					"value": "stethoscope",
+					"trait_type": "Weapon"
+				},
+				{
+					"value": "g(rant's) m(etaverse)",
+					"trait_type": "Home"
+				},
+				{
+					"value": "PEPESUPREM",
+					"trait_type": "Parent"
+				},
+				{
+					"value": "Fakalife & Calm Pepe",
+					"trait_type": "Sibling"
+				},
+				{
+					"value": "Hot Dog & Chicken Bake",
+					"trait_type": "Food"
+				},
+				{
+					"value": "Soft Drink 69 cents ",
+					"trait_type": "Drink"
+				},
+				{
+					"value": "2023/01",
+					"trait_type": "Issuance Month"
+				},
+				{
+					"value": "No",
+					"trait_type": "Pepe"
+				},
+				{
+					"value": "No",
+					"trait_type": "GM"
+				},
+				{
+					"display_type": "boost_percentage",
+					"value": "6969696969",
+					"trait_type": "Points - Power",
+					"max_value": "100"
+				},
+				{
+					"display_type": "boost_percentage",
+					"value": "42069",
+					"trait_type": "Points - Wisdom",
+					"max_value": "100"
+				},
+				{
+					"display_type": "boost_percentage",
+					"value": "69",
+					"trait_type": "Points - Loki",
+					"max_value": "100"
+				},
+				{
+					"display_type": "boost_percentage",
+					"value": "420",
+					"trait_type": "Points - Speed",
+					"max_value": "100"
+				},
+				{
+					"value": "1) what",
+					"trait_type": "Bonus"
+				},
+				{
+					"value": "steady lads deploying more capital",
+					"trait_type": "Boost"
+				},
+				{
+					"display_type": "number",
+					"value": "1",
+					"trait_type": "Type - Meme"
+				},
+				{
+					"display_type": "number",
+					"value": "2",
+					"trait_type": "Type - Season"
+				},
+				{
+					"display_type": "number",
+					"value": "52",
+					"trait_type": "Type - Card"
+				},
+				{
+					"value": "No",
+					"trait_type": "Summer"
+				},
+				{
+					"value": "No",
+					"trait_type": "Tulip"
+				}
+			],
+			"created_by": "6529 Collections",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x33FD426905F149f8376e227d0C9D3340AaD17aF1:52",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x35E333C406D1eD633c2CeD29F6BE02752Acc6E78",
+		"tokenId": "7",
+		"metadata": {
+			"image": "https://arweave.net/Ulv1Stcuf0AOTaAqFb1A0fZRNZTkYS68A-FMfIboXn0",
+			"external_url": "c4rdinal.com",
+			"image_details": {
+				"format": "GIF",
+				"width": 2400,
+				"sha256": "1b19d292f48232fb621ee8a7dd8eff54ce66a2f5a9e96e20bd71af74980f55c0",
+				"bytes": 5203869,
+				"height": 1350
+			},
+			"image_url": "https://arweave.net/Ulv1Stcuf0AOTaAqFb1A0fZRNZTkYS68A-FMfIboXn0",
+			"name": "distant",
+			"description": "2023  \nGIF  \n2400x1350",
+			"attributes": [
+				{
+					"value": "#800000",
+					"trait_type": "1"
+				},
+				{
+					"value": "#0f52ba",
+					"trait_type": "2"
+				},
+				{
+					"value": "#50c878",
+					"trait_type": "3"
+				}
+			],
+			"created_by": "C4RDINAL",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x35E333C406D1eD633c2CeD29F6BE02752Acc6E78:7",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x36DEc883B1e52c49f3c80b471953A3d2a010Cb18",
+		"tokenId": "35",
+		"metadata": {
+			"image": "https://arweave.net/fa6-Y7-bccAOEEthUYyZrRBI1GdcuI-fqiWH10VlFWA",
+			"image_details": {
+				"format": "JPEG",
+				"width": 4000,
+				"sha256": "94e42a14e72e358a2b3c8c8a647064d00a6e415251b04ae038ce295449647d70",
+				"bytes": 13002944,
+				"height": 5000
+			},
+			"image_url": "https://arweave.net/fa6-Y7-bccAOEEthUYyZrRBI1GdcuI-fqiWH10VlFWA",
+			"name": "Heavy Heart",
+			"description": "mendezmendez, digital mixed media, 2024",
+			"attributes": [
+				{
+					"display_type": "text",
+					"value": "mendezmendez",
+					"trait_type": "Artist"
+				},
+				{
+					"value": "Interlude",
+					"trait_type": "Chapter"
+				},
+				{
+					"value": "No",
+					"trait_type": "Physical Claimed"
+				}
+			],
+			"created_by": "mendezmendez",
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x36DEc883B1e52c49f3c80b471953A3d2a010Cb18:35",
+		"tokenStandard": "erc-721"
+	},
+	{
+		"chain": "ethereum",
+		"contractAddress": "0x52ECE1e8dDB120e5A073Ed56779736107A0F4752",
+		"tokenId": "1",
+		"metadata": {
+			"image": "https://crossmint.myfilebase.com/ipfs/QmQQEEBJFiX1u9ihLt1dYdP5kryEZts1bZ8dG9YkrbXss1/media",
+			"name": "Take Your Shot",
+			"image_sha256": "e4079f2c852b179dd5f7f4d59af34e4c1885b456925a483ab759f57342f79015",
+			"description": "I have flown over NYC and the Statue of Liberty countless times, and thought I had captured every possible shot of our city’s guardian.\n\nThat all changed on the night of November 11, 2021. As we approached Lady Liberty, I happened to peek through the plexiglass footwell of the helicopter. Seeing the light diffusion and the grandeur of the scene, I immediately fumbled to adjust my camera settings.\n\nThe moment lasted less than a minute, but the image is now forever immortalized on the blockchain.\n\nA great honorary New Yorker once said, “You miss 100% of the shots you don’t take.” So get out there and take your shot. Who knows where it will lead you, but you’ll only find out by taking that first step.",
+			"attributes": [],
+			"media": {
+				"mimeType": "image/jpeg",
+				"size": "16026729",
+				"uri": "https://crossmint.myfilebase.com/ipfs/QmQQEEBJFiX1u9ihLt1dYdP5kryEZts1bZ8dG9YkrbXss1/media",
+				"dimensions": "5154x7730"
+			},
+			"tags": [],
+			"collection": {},
+			"animation_url": null
+		},
+		"locator": "ethereum:0x52ECE1e8dDB120e5A073Ed56779736107A0F4752:1",
+		"tokenStandard": "erc-721"
+	}
+]
