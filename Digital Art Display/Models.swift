@@ -25,13 +25,14 @@ struct ArtworkItem: Identifiable, Codable, Equatable {
     let chain: String
     let contractAddress: String
     let tokenId: String
+    let groupId: String?  // New field for grouping artworks
     
     var url: String {
         return metadata.image
     }
     
     enum CodingKeys: String, CodingKey {
-        case metadata, chain, contractAddress, tokenId
+        case metadata, chain, contractAddress, tokenId, groupId
     }
     
     init(from decoder: Decoder) throws {
@@ -40,6 +41,7 @@ struct ArtworkItem: Identifiable, Codable, Equatable {
         chain = try container.decode(String.self, forKey: .chain)
         contractAddress = try container.decode(String.self, forKey: .contractAddress)
         tokenId = try container.decode(String.self, forKey: .tokenId)
+        groupId = try container.decodeIfPresent(String.self, forKey: .groupId)
     }
     
     func encode(to encoder: Encoder) throws {
@@ -48,6 +50,7 @@ struct ArtworkItem: Identifiable, Codable, Equatable {
         try container.encode(chain, forKey: .chain)
         try container.encode(contractAddress, forKey: .contractAddress)
         try container.encode(tokenId, forKey: .tokenId)
+        try container.encodeIfPresent(groupId, forKey: .groupId)
     }
     
     // Equatable implementation - compare based on content, not id
@@ -55,7 +58,43 @@ struct ArtworkItem: Identifiable, Codable, Equatable {
         return lhs.metadata == rhs.metadata &&
                lhs.chain == rhs.chain &&
                lhs.contractAddress == rhs.contractAddress &&
-               lhs.tokenId == rhs.tokenId
+               lhs.tokenId == rhs.tokenId &&
+               lhs.groupId == rhs.groupId
+    }
+}
+
+// MARK: - Display Item Types
+
+enum DisplayItem: Identifiable {
+    case single(ArtworkItem)
+    case group([ArtworkItem])
+    
+    var id: String {
+        switch self {
+        case .single(let artwork):
+            return artwork.id.uuidString
+        case .group(let artworks):
+            return artworks.first?.groupId ?? UUID().uuidString
+        }
+    }
+    
+    var artworks: [ArtworkItem] {
+        switch self {
+        case .single(let artwork):
+            return [artwork]
+        case .group(let artworks):
+            return artworks
+        }
+    }
+    
+    // Get the primary artwork for display purposes
+    var primaryArtwork: ArtworkItem? {
+        switch self {
+        case .single(let artwork):
+            return artwork
+        case .group(let artworks):
+            return artworks.first
+        }
     }
 }
 

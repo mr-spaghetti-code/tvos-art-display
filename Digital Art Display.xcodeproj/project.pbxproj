@@ -44,16 +44,6 @@
 			path = "Digital Art Display";
 			sourceTree = "<group>";
 		};
-		354575FD2E24D7ED0020297A /* Digital Art DisplayTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Digital Art DisplayTests";
-			sourceTree = "<group>";
-		};
-		354576072E24D7ED0020297A /* Digital Art DisplayUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Digital Art DisplayUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				354575EC2E24D7560020297A /* Digital Art Display */,
-				354575FD2E24D7ED0020297A /* Digital Art DisplayTests */,
-				354576072E24D7ED0020297A /* Digital Art DisplayUITests */,
 				356B52502E259DB00096DD63 /* Frameworks */,
 				354575EB2E24D7560020297A /* Products */,
 			);
@@ -159,9 +147,6 @@
 			dependencies = (
 				354575FC2E24D7ED0020297A /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				354575FD2E24D7ED0020297A /* Digital Art DisplayTests */,
-			);
 			name = "Digital Art DisplayTests";
 			packageProductDependencies = (
 			);
@@ -181,9 +166,6 @@
 			);
 			dependencies = (
 				354576062E24D7ED0020297A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				354576072E24D7ED0020297A /* Digital Art DisplayUITests */,
 			);
 			name = "Digital Art DisplayUITests";
 			packageProductDependencies = (

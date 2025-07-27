@@ -17,6 +17,7 @@ import Supabase
 class GalleryManager: ObservableObject {
     @Published var currentGallery: Gallery?
     @Published var galleryArtworks: [ArtworkItem] = []
+    @Published var displayItems: [DisplayItem] = []
     @Published var isLoading = false
     @Published var humanReadableId: String = ""
     
@@ -138,6 +139,7 @@ class GalleryManager: ObservableObject {
                     // If artworks were added, update the display
                     if let artworks = gallery.artworks, !artworks.isEmpty {
                         self.galleryArtworks = artworks
+                        self.processArtworksIntoDisplayItems()
                         
                         // Start preloading images with progress tracking
                         self.isPreloadingImages = true
@@ -203,6 +205,7 @@ class GalleryManager: ObservableObject {
                         // Select 10 random artworks
                         let shuffled = allArtworks.shuffled()
                         self.galleryArtworks = Array(shuffled.prefix(10))
+                        self.processArtworksIntoDisplayItems()
                         
                         // Start preloading images with progress tracking
                         self.isPreloadingImages = true
@@ -269,6 +272,7 @@ class GalleryManager: ObservableObject {
         // Clear current gallery data
         currentGallery = nil
         galleryArtworks = []
+        displayItems = []
         
         // Generate a new ID
         humanReadableId = HumanReadableID.generate()
@@ -277,5 +281,45 @@ class GalleryManager: ObservableObject {
     
     var galleryUrl: String {
         return "\(SupabaseConfig.galleryAppDomain)/gallery/\(humanReadableId)"
+    }
+    
+    // Process artworks into display items, grouping by groupId
+    private func processArtworksIntoDisplayItems() {
+        var processedItems: [DisplayItem] = []
+        var groupedByGroupId: [String: [ArtworkItem]] = [:]
+        var processedIds = Set<UUID>()
+        
+        // First pass: identify and group artworks with groupIds
+        for artwork in galleryArtworks {
+            if let groupId = artwork.groupId {
+                if groupedByGroupId[groupId] == nil {
+                    groupedByGroupId[groupId] = []
+                }
+                groupedByGroupId[groupId]?.append(artwork)
+            }
+        }
+        
+        // Second pass: create display items maintaining original order
+        for artwork in galleryArtworks {
+            // Skip if already processed as part of a group
+            if processedIds.contains(artwork.id) {
+                continue
+            }
+            
+            if let groupId = artwork.groupId, let group = groupedByGroupId[groupId] {
+                // Add the entire group when we encounter the first item
+                processedItems.append(.group(group))
+                // Mark all items in the group as processed
+                for item in group {
+                    processedIds.insert(item.id)
+                }
+            } else {
+                // Single artwork without groupId
+                processedItems.append(.single(artwork))
+                processedIds.insert(artwork.id)
+            }
+        }
+        
+        displayItems = processedItems
     }
 } 

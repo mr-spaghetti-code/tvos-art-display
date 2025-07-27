@@ -27,6 +27,69 @@ extension View {
     }
 }
 
+// MARK: - Grouped Views
+
+struct GroupedArtworkView: View {
+    let artworks: [ArtworkItem]
+    let animationSpeed: Double
+    
+    var body: some View {
+        GeometryReader { geometry in
+            HStack(spacing: 20) {
+                ForEach(artworks) { artwork in
+                    CachedAsyncImage(
+                        url: artwork.url,
+                        aspectRatio: .fit,
+                        animationSpeed: animationSpeed
+                    )
+                    .frame(maxWidth: (geometry.size.width - 20) / CGFloat(artworks.count))
+                    .frame(maxHeight: geometry.size.height * 0.85)
+                }
+            }
+            .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+        }
+    }
+}
+
+struct GroupedGalleryThumbnail: View {
+    let artworks: [ArtworkItem]
+    let isSelected: Bool
+    let isFocused: Bool
+    let animationSpeed: Double
+    
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 20)
+                .fill(Color.white.opacity(isSelected ? 0.2 : 0.1))
+                .frame(width: 300, height: 200)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20)
+                        .stroke(
+                            isFocused ? Color.white : Color.clear,
+                            lineWidth: isFocused ? 4 : 0
+                        )
+                )
+                .scaleEffect(isFocused ? 1.15 : 1.0)
+                .shadow(color: isFocused ? .white.opacity(0.5) : .clear, radius: 20)
+                .animation(.easeInOut(duration: 0.2), value: isFocused)
+            
+            // Side-by-side thumbnails
+            HStack(spacing: 8) {
+                ForEach(artworks.prefix(2)) { artwork in
+                    CachedAsyncImage(
+                        url: artwork.url,
+                        aspectRatio: .fit,
+                        animationSpeed: animationSpeed
+                    )
+                    .frame(maxWidth: 130, maxHeight: 170)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                }
+            }
+            .padding(10)
+        }
+    }
+}
+
 struct ContentView: View {
     @StateObject private var galleryManager = GalleryManager()
     @State private var selectedIndex = 0
@@ -82,6 +145,10 @@ struct ContentView: View {
         ("Dark Teal", Color(red: 0.05, green: 0.15, blue: 0.15))
     ]
     
+    var displayItems: [DisplayItem] {
+        return galleryManager.displayItems
+    }
+    
     var artworks: [ArtworkItem] {
         return galleryManager.galleryArtworks
     }
@@ -89,14 +156,15 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             // Background layer
-            if smartBlurEnabled && !artworks.isEmpty && !showQRCode && galleryManager.preloadProgress >= 0.2 {
+            if smartBlurEnabled && !displayItems.isEmpty && !showQRCode && galleryManager.preloadProgress >= 0.2 && selectedIndex < displayItems.count {
                 // Smart blur background using current artwork
                 GeometryReader { geometry in
-                    CachedAsyncImage(
-                        url: artworks[selectedIndex].url,
-                        aspectRatio: .fill,
-                        animationSpeed: gifAnimationSpeed
-                    )
+                    if let primaryArtwork = displayItems[selectedIndex].primaryArtwork {
+                        CachedAsyncImage(
+                            url: primaryArtwork.url,
+                            aspectRatio: .fill,
+                            animationSpeed: gifAnimationSpeed
+                        )
                     .frame(width: geometry.size.width, height: geometry.size.height)
                     .clipped()
                     .blur(radius: 80)
@@ -104,7 +172,8 @@ struct ContentView: View {
                         // Dark overlay to ensure main image stands out
                         Color.black.opacity(0.5)
                     )
-                    .scaleEffect(1.2) // Slight scale to avoid edge artifacts
+                        .scaleEffect(1.2) // Slight scale to avoid edge artifacts
+                    }
                 }
                 .ignoresSafeArea()
                 .animation(.easeInOut(duration: 0.5), value: selectedIndex)
@@ -114,11 +183,11 @@ struct ContentView: View {
             }
             
             // Loading screen with progress bar (when gallery is loading but images aren't ready)
-            if !showQRCode && !artworks.isEmpty && galleryManager.isPreloadingImages && galleryManager.preloadProgress < 0.2 {
+            if !showQRCode && !displayItems.isEmpty && galleryManager.isPreloadingImages && galleryManager.preloadProgress < 0.2 {
                 // Only show loading screen while initial batch is loading (first 20%)
                 PreloadingView(progress: galleryManager.preloadProgress)
                     .transition(.opacity)
-            } else if showQRCode || artworks.isEmpty {
+            } else if showQRCode || displayItems.isEmpty {
                 // QR Code display (when no gallery is loaded)
                 QRCodeView(
                     humanReadableId: galleryManager.humanReadableId,
@@ -135,16 +204,27 @@ struct ContentView: View {
                 .onAppear {
                     qrCodeFocused = true
                 }
-            } else if !artworks.isEmpty && galleryManager.preloadProgress >= 0.2 {
+            } else if !displayItems.isEmpty && galleryManager.preloadProgress >= 0.2 {
                 // Main image display (show when initial batch is loaded - 20% progress)
                 GeometryReader { geometry in
-                    CachedAsyncImage(
-                        url: artworks[selectedIndex].url,
-                        aspectRatio: .fit,
-                        animationSpeed: gifAnimationSpeed
-                    )
-                    .frame(maxWidth: geometry.size.width * 0.85, maxHeight: geometry.size.height * 0.85)
-                    .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+                    if selectedIndex < displayItems.count {
+                        switch displayItems[selectedIndex] {
+                        case .single(let artwork):
+                            CachedAsyncImage(
+                                url: artwork.url,
+                                aspectRatio: .fit,
+                                animationSpeed: gifAnimationSpeed
+                            )
+                            .frame(maxWidth: geometry.size.width * 0.85, maxHeight: geometry.size.height * 0.85)
+                            .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+                            
+                        case .group(let artworks):
+                            GroupedArtworkView(
+                                artworks: artworks,
+                                animationSpeed: gifAnimationSpeed
+                            )
+                        }
+                    }
                 }
                 .animation(.easeInOut(duration: 0.3), value: selectedIndex)
                 .ignoresSafeArea()
@@ -159,7 +239,7 @@ struct ContentView: View {
                                 cleanupDistantImages()
                             }
                         case .right:
-                            if selectedIndex < artworks.count - 1 {
+                            if selectedIndex < displayItems.count - 1 {
                                 selectedIndex += 1
                                 // Clear distant images when navigating
                                 cleanupDistantImages()
@@ -188,12 +268,12 @@ struct ContentView: View {
                 }
                 
                 // Artwork info overlay (bottom-right)
-                if !showGallery && !showSettings && galleryManager.preloadProgress >= 0.2 {
+                if !showGallery && !showSettings && galleryManager.preloadProgress >= 0.2 && selectedIndex < displayItems.count {
                     VStack {
                         Spacer()
                         HStack {
                             Spacer()
-                            ArtworkInfoPanel(artwork: artworks[selectedIndex])
+                            ArtworkInfoPanel(displayItem: displayItems[selectedIndex])
                                 .padding(.trailing, 60)
                                 .padding(.bottom, 40)
                         }
@@ -206,7 +286,7 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 
-                if showGallery && !artworks.isEmpty && galleryManager.preloadProgress >= 0.2 {
+                if showGallery && !displayItems.isEmpty && galleryManager.preloadProgress >= 0.2 {
                     VStack(spacing: 0) {
                         // Gallery title
                         Text("Select Artwork")
@@ -217,15 +297,27 @@ struct ContentView: View {
                         ScrollView(.horizontal, showsIndicators: false) {
                             ScrollViewReader { proxy in
                                 LazyHStack(spacing: 30, pinnedViews: []) {
-                                    ForEach(artworks.indices, id: \.self) { index in
-                                        GalleryThumbnail(
-                                            artwork: artworks[index],
-                                            isSelected: index == selectedIndex,
-                                            isFocused: focusedIndex == index,
-                                            index: index,
-                                            animationSpeed: gifAnimationSpeed,
-                                            selectedIndex: selectedIndex
-                                        )
+                                    ForEach(displayItems.indices, id: \.self) { index in
+                                        Group {
+                                            switch displayItems[index] {
+                                            case .single(let artwork):
+                                                GalleryThumbnail(
+                                                    artwork: artwork,
+                                                    isSelected: index == selectedIndex,
+                                                    isFocused: focusedIndex == index,
+                                                    index: index,
+                                                    animationSpeed: gifAnimationSpeed,
+                                                    selectedIndex: selectedIndex
+                                                )
+                                            case .group(let artworks):
+                                                GroupedGalleryThumbnail(
+                                                    artworks: artworks,
+                                                    isSelected: index == selectedIndex,
+                                                    isFocused: focusedIndex == index,
+                                                    animationSpeed: gifAnimationSpeed
+                                                )
+                                            }
+                                        }
                                         .id(index)
                                         .focusable(true, interactions: .activate)
                                         .focused($focusedIndex, equals: index)
@@ -255,12 +347,14 @@ struct ContentView: View {
                                         galleryScrollTimer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false) { _ in
                                             // Define the window of images to keep in memory
                                             let windowSize = 2 // Keep current ± 2 images only
-                                            let keepRange = max(0, newValue - windowSize)...min(artworks.count - 1, newValue + windowSize)
+                                            let keepRange = max(0, newValue - windowSize)...min(displayItems.count - 1, newValue + windowSize)
                                             
                                             // First, aggressively remove ALL images outside the window
-                                            for (index, artwork) in artworks.enumerated() {
+                                            for (index, displayItem) in displayItems.enumerated() {
                                                 if !keepRange.contains(index) {
-                                                    ImageCache.shared.removeImage(for: artwork.url)
+                                                    for artwork in displayItem.artworks {
+                                                        ImageCache.shared.removeImage(for: artwork.url)
+                                                    }
                                                     loadedThumbnailIndices.remove(index)
                                                 }
                                             }
@@ -274,11 +368,13 @@ struct ContentView: View {
                                             // Then preload only what's needed within the window
                                             for preloadIndex in keepRange {
                                                 if !loadedThumbnailIndices.contains(preloadIndex) {
-                                                    let loader = ImageLoaderManager.shared.loader(for: artworks[preloadIndex].url)
-                                                    if loader.image == nil && loader.animatedImageData == nil && !loader.isLoading {
-                                                        loader.load(urlString: artworks[preloadIndex].url)
-                                                        loadedThumbnailIndices.insert(preloadIndex)
+                                                    for artwork in displayItems[preloadIndex].artworks {
+                                                        let loader = ImageLoaderManager.shared.loader(for: artwork.url)
+                                                        if loader.image == nil && loader.animatedImageData == nil && !loader.isLoading {
+                                                            loader.load(urlString: artwork.url)
+                                                        }
                                                     }
+                                                    loadedThumbnailIndices.insert(preloadIndex)
                                                 }
                                             }
                                         }
@@ -334,9 +430,11 @@ struct ContentView: View {
                         
                         // Clear image cache for thumbnails when gallery closes to free memory
                         // Keep only the currently selected image
-                        for (index, artwork) in artworks.enumerated() {
+                        for (index, displayItem) in displayItems.enumerated() {
                             if index != selectedIndex {
-                                ImageCache.shared.removeImage(for: artwork.url)
+                                for artwork in displayItem.artworks {
+                                    ImageCache.shared.removeImage(for: artwork.url)
+                                }
                             }
                         }
                     }
@@ -345,7 +443,7 @@ struct ContentView: View {
             .animation(.easeInOut(duration: 0.3), value: showGallery)
             
             // Settings overlay
-            if showSettings && !artworks.isEmpty && galleryManager.preloadProgress >= 0.2 {
+            if showSettings && !displayItems.isEmpty && galleryManager.preloadProgress >= 0.2 {
                 VStack {
                     Spacer()
                     
@@ -611,7 +709,7 @@ struct ContentView: View {
         }
         .onMoveCommand { direction in
             // This handles edge cases where focus might be on the root view
-            if !showGallery && !showSettings && !artworks.isEmpty && galleryManager.preloadProgress >= 0.2 {
+            if !showGallery && !showSettings && !displayItems.isEmpty && galleryManager.preloadProgress >= 0.2 {
                 if direction == .up {
                     withAnimation {
                         showGallery = true
@@ -641,7 +739,7 @@ struct ContentView: View {
                     gifSpeedFocused = false
                     refreshButtonFocused = false
                     resetButtonFocused = false
-                } else if !artworks.isEmpty && galleryManager.preloadProgress >= 0.2 {
+                } else if !displayItems.isEmpty && galleryManager.preloadProgress >= 0.2 {
                     showGallery.toggle()
                     if showGallery {
                         focusedIndex = selectedIndex
@@ -677,7 +775,7 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            // galleryManager.humanReadableId = "sweet-baby-jesus"
+            galleryManager.humanReadableId = "sweet-baby-jesus"
             galleryManager.loadGallery()
             startPolling()
             
@@ -692,9 +790,11 @@ struct ContentView: View {
                 loadedThumbnailIndices.removeAll()
                 
                 // Only keep the current image
-                if !artworks.isEmpty {
-                    let loader = ImageLoaderManager.shared.loader(for: artworks[selectedIndex].url)
-                    loader.load(urlString: artworks[selectedIndex].url)
+                if selectedIndex < displayItems.count {
+                    for artwork in displayItems[selectedIndex].artworks {
+                        let loader = ImageLoaderManager.shared.loader(for: artwork.url)
+                        loader.load(urlString: artwork.url)
+                    }
                 }
             }
         }
@@ -746,11 +846,13 @@ struct ContentView: View {
     
     private func cleanupDistantImages() {
         // Keep only images very close to current selection
-        let keepRange = max(0, selectedIndex - 1)...min(artworks.count - 1, selectedIndex + 1)
+        let keepRange = max(0, selectedIndex - 1)...min(displayItems.count - 1, selectedIndex + 1)
         
-        for (index, artwork) in artworks.enumerated() {
+        for (index, displayItem) in displayItems.enumerated() {
             if !keepRange.contains(index) {
-                ImageCache.shared.removeImage(for: artwork.url)
+                for artwork in displayItem.artworks {
+                    ImageCache.shared.removeImage(for: artwork.url)
+                }
             }
         }
     }
@@ -1047,26 +1149,59 @@ struct ColorPickerRow: View {
 }
 
 struct ArtworkInfoPanel: View {
-    let artwork: ArtworkItem
+    let displayItem: DisplayItem
     
     var body: some View {
         VStack(alignment: .trailing, spacing: 8) {
-            if let name = artwork.metadata.name {
-                Text(name)
-                    .font(.headline)
-                    .fontWeight(.medium)
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.trailing)
-                    .lineLimit(2)
-            }
-            
-            if let description = artwork.metadata.description, !description.isEmpty {
-                Text(description)
-                    .font(.caption)
-                    .foregroundColor(.white.opacity(0.75))
-                    .multilineTextAlignment(.trailing)
-                    .lineLimit(6)
-                    .fixedSize(horizontal: false, vertical: true)
+            switch displayItem {
+            case .single(let artwork):
+                // Display single artwork info
+                if let name = artwork.metadata.name {
+                    Text(name)
+                        .font(.headline)
+                        .fontWeight(.medium)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.trailing)
+                        .lineLimit(2)
+                }
+                
+                if let description = artwork.metadata.description, !description.isEmpty {
+                    Text(description)
+                        .font(.caption)
+                        .foregroundColor(.white.opacity(0.75))
+                        .multilineTextAlignment(.trailing)
+                        .lineLimit(6)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                
+            case .group(let artworks):
+                // Display grouped artworks info
+                ForEach(artworks.indices, id: \.self) { index in
+                    VStack(alignment: .trailing, spacing: 4) {
+                        if let name = artworks[index].metadata.name {
+                            Text(name)
+                                .font(.subheadline)
+                                .fontWeight(.medium)
+                                .foregroundColor(.white)
+                                .multilineTextAlignment(.trailing)
+                                .lineLimit(1)
+                        }
+                        
+                        if let description = artworks[index].metadata.description, !description.isEmpty {
+                            Text(description)
+                                .font(.caption2)
+                                .foregroundColor(.white.opacity(0.7))
+                                .multilineTextAlignment(.trailing)
+                                .lineLimit(2)
+                        }
+                    }
+                    
+                    if index < artworks.count - 1 {
+                        Divider()
+                            .background(Color.white.opacity(0.3))
+                            .padding(.vertical, 2)
+                    }
+                }
             }
         }
         .padding(16)
